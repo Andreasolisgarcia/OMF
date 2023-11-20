@@ -1,0 +1,26 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+</style>
+
+@mixins name {
+
+}
+
+.example {
+  @include name
+}
+
+
+BEM
+block elements modofiers
+.block__element--modifier
+.tick-man__head--bleu
+
+rem
+
+1 rem equivaut a la taille par default de la police   font du body
+1 em, font size of the parent
