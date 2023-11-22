@@ -134,8 +134,69 @@ header .header__bottom-content__text {
   font-weight: 500;
 }
 
-.restaurants img {
-  height: 20px;
+.restaurants {
+  padding: 54px 18px 66px 18px;
+  background: #F6F6F6;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 2px;
+  margin-bottom: 26px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants__cards .card {
+  background: white;
+  border-radius: 15px;
+  position: relative;
+}
+.restaurants__cards .card__image {
+  height: 231px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__cards .card__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+}
+.restaurants__cards .card__content {
+  padding: 12px 12px 14px 12px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+.restaurants__cards .card__content__text .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.restaurants__cards .card__content__text .subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants__cards .card__content input[type=checkbox] {
+  display: none;
+}
+.restaurants__cards .card__content img {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+  width: 22px;
+  height: 21px;
 }
 
 .btn-main {
