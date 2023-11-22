@@ -7,11 +7,15 @@
 @import './abstracts/mixins';
 
 @import './layout/header';
+@import './layout/hero';
 @import './layout/restaurants';
+
+@import './components/buttons';
 
 body {
     font-family: $font-body;
 }
+
 
 
 
