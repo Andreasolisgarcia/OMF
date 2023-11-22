@@ -1,0 +1,55 @@
+.instructions {
+  height: 440px;
+  padding: 48px 20px 0 20px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+  &__steps {
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .step {
+      position: relative;
+      &__number {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 25px;
+        background: $primary-color;
+        color: white;
+        font-size: 14px;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        transform: translateX(-50%);
+        top: 27px;
+      }
+      &__content {
+        background: $ligth-grey;
+        width: 322px;
+        height: 72px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+        align-items: center;
+        padding-left: 33px;
+        gap: 27px;
+
+        .step__icon {
+          width: 13px;
+          color: $medium-grey-2;
+        }
+
+        .step__text{
+            font-size: 16px;
+            font-weight: 500;
+        }
+      }
+    }
+  }
+}

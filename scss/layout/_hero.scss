@@ -1,6 +1,7 @@
 .hero {
-    height: 287px;
-    padding-top: 39px;
+  height: 287px;
+  padding-top: 39px;
+  background: $ligth-grey;
 
   .hero-content {
     @include flex-center;
@@ -9,7 +10,7 @@
     &__title {
       height: 68px;
       width: 275px;
-        
+
       font-size: 24px;
       font-weight: 700;
       text-align: center;
@@ -22,6 +23,11 @@
       font-weight: 300;
       text-align: center;
       margin-bottom: 27px;
+    }
+
+    .btn-explore {
+        width: 218px;
+        
     }
   }
 }

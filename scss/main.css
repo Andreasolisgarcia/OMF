@@ -55,6 +55,7 @@ header .header__bottom-content__text {
 .hero {
   height: 287px;
   padding-top: 39px;
+  background: #F6F6F6;
 }
 .hero .hero-content {
   display: flex;
@@ -77,6 +78,61 @@ header .header__bottom-content__text {
   text-align: center;
   margin-bottom: 27px;
 }
+.hero .hero-content .btn-explore {
+  width: 218px;
+}
+
+.instructions {
+  height: 440px;
+  padding: 48px 20px 0 20px;
+}
+.instructions__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.instructions__steps {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.instructions__steps .step {
+  position: relative;
+}
+.instructions__steps .step__number {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  background: #9356DC;
+  color: white;
+  font-size: 14px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+  top: 27px;
+}
+.instructions__steps .step__content {
+  background: #F6F6F6;
+  width: 322px;
+  height: 72px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding-left: 33px;
+  gap: 27px;
+}
+.instructions__steps .step__content .step__icon {
+  width: 13px;
+  color: #7E7E7E;
+}
+.instructions__steps .step__content .step__text {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .restaurants img {
   height: 20px;
@@ -85,7 +141,7 @@ header .header__bottom-content__text {
 .btn-main {
   color: white;
   text-align: center;
-  width: 218px;
+  width: 186px;
   height: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
