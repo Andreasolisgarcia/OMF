@@ -1,1 +1,17 @@
-@import './base/resets'
+@charset 'utf-8';
+
+@import './base/resets';
+@import './base/typography';
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './layout/header';
+@import './layout/restaurants';
+
+body {
+    font-family: $font-body;
+}
+
+
+

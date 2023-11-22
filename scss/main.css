@@ -1,5 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+header .header-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+header .header-top-content__return-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 17px;
+}
+header .header-top-content__logo {
+  display: flex;
+  align-items: flex-end;
+  height: 36px;
+}
+header .header-top-content__logo--size {
+  width: 162px;
+}
+header .header__bottom-content {
+  background: #EAEAEA;
+  height: 50px;
+  gap: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header__bottom-content__icon i {
+  color: #353535;
+  width: 12px;
+  height: 16px;
+}
+header .header__bottom-content__text {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.restaurants img {
+  height: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */
