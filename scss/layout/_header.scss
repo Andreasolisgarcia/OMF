@@ -32,7 +32,7 @@ header {
     height: 50px;
     gap: 17px;
 
-    @include flexCenter;
+    @include flexCenter(row);
     &__icon i {
       color: $dark-grey;
       width: 12px;
