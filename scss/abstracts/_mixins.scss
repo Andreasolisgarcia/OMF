@@ -1,5 +1,12 @@
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+@mixin flexCenter($direction: column) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin fontProperties($font-weight, $size, $font-family: $font-by-default) {
+  font-weight: map-get($font-weights, $font-weight);
+  font-size: $size;
+  font-family: $font-family;
+}

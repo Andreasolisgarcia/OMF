@@ -1,13 +1,20 @@
-$font-body: "Roboto", sans-serif;
+$font-by-default: "Roboto", sans-serif;
 $font-title: "Shrikhand", cursive;
-$ligth-grey: #f6f6f6;
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$light-grey: #f6f6f6;
 $medium-grey: #eaeaea;
 $medium-grey-2: #7e7e7e;
 
-$ligth-green: #99e2d0;
+$light-green: #99e2d0;
 $dark-green: #008766;
 
 $dark-grey: #353535;
 
 $primary-color: #9356dc;
-$btn-main-ligthcolor: #ff79da;
+$btn-main-lightcolor: #ff79da;

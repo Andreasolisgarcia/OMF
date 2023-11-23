@@ -3,8 +3,7 @@
   padding: 48px 20px 0 20px;
 
   &__title {
-    font-size: 24px;
-    font-weight: 700;
+    @include fontProperties("bold", 24px);
     margin-bottom: 26px;
   }
   &__steps {
@@ -29,7 +28,7 @@
         top: 27px;
       }
       &__content {
-        background: $ligth-grey;
+        background: $light-grey;
         width: 322px;
         height: 72px;
         border-radius: 20px;
@@ -46,8 +45,7 @@
         }
 
         .step__text {
-          font-size: 16px;
-          font-weight: 500;
+          @include fontProperties("medium", 16px);
         }
       }
     }

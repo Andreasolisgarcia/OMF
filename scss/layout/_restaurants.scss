@@ -1,9 +1,8 @@
 .restaurants {
   padding: 54px 18px 66px 18px;
-  background: $ligth-grey;
+  background: $light-grey;
   &__title {
-    font-size: 24px;
-    font-weight: 700;
+    @include fontProperties("bold", 24px);
     padding-left: 2px;
     margin-bottom: 26px;
   }
@@ -24,17 +23,16 @@
       }
 
       &__tag {
-        @include flex-center;
+        @include flexCenter;
         border-radius: 2px;
         width: 80px;
         height: 29px;
         position: absolute;
         top: 15px;
         right: 15px;
-        background: $ligth-green;
+        background: $light-green;
         color: $dark-green;
-        font-size: 14px;
-        font-weight: 500;
+        @include fontProperties("medium", 14px);
       }
 
       &__content {
@@ -44,13 +42,11 @@
 
         &__text {
           .title {
-            font-size: 18px;
-            font-weight: 700;
+            @include fontProperties("bold", 18px);
             margin-bottom: 5px;
           }
           .subtitle {
-            font-size: 17px;
-            font-weight: 300;
+            @include fontProperties("light", 17px);
           }
         }
 
@@ -58,9 +54,6 @@
           display: none;
         }
 
-        //         input[type="checkbox"]:checked + label {
-        //   background: var(--filter-bg-color);
-        // }
         img {
           position: absolute;
           top: 23px;

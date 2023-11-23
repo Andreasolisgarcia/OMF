@@ -1,26 +1,23 @@
 .hero {
   height: 287px;
   padding-top: 39px;
-  background: $ligth-grey;
+  background: $light-grey;
 
   .hero-content {
-    @include flex-center;
-    flex-direction: column;
+    @include flexCenter;
 
     &__title {
+      @include fontProperties("bold", 24px);
+      text-align: center;
+
       height: 68px;
       width: 275px;
-
-      font-size: 24px;
-      font-weight: 700;
-      text-align: center;
     }
     &__subtitle {
       height: 46px;
       width: 315px;
 
-      font-size: 18px;
-      font-weight: 300;
+      @include fontProperties("light", 18px);
       text-align: center;
       margin-bottom: 27px;
     }
