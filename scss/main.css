@@ -315,27 +315,81 @@ footer .footer__links .bold-link {
   flex-direction: column;
   gap: 12px;
 }
+.restaurant-menu .menu__courses__list input[type=checkbox]:checked + .dish {
+  padding-right: 74px;
+}
+.restaurant-menu .menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
+  display: block;
+}
 .restaurant-menu .menu__courses__list .dish {
   background: white;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   padding: 13px 15px 13px 15px;
   border-radius: 15px;
-}
-.restaurant-menu .menu__courses__list .dish__title {
-  font-weight: 500;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 5px;
+  justify-content: space-between;
+  position: relative;
 }
 .restaurant-menu .menu__courses__list .dish__details {
   display: flex;
   justify-content: space-between;
+}
+.restaurant-menu .menu__courses__list .dish__details .details-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.restaurant-menu .menu__courses__list .dish__details .details-text__title {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurant-menu .menu__courses__list .dish__details .details-text__description {
   font-weight: 300;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant-menu .menu__courses__list .dish__details .price {
   font-weight: 700;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.restaurant-menu .menu__courses__list .dish__details .price span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: white;
+  width: 40px;
+  height: 100%;
+}
+.restaurant-menu .menu__courses__list .dish__check {
+  background: #99e2d0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 59px;
+  border-radius: 0 15px 15px 0;
+  display: none;
+}
+.restaurant-menu .menu__courses__list .dish__check .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 24px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background: white;
+  color: #99e2d0;
 }
 .restaurant-menu .menu__btn-container {
   display: flex;

@@ -24,6 +24,7 @@
       .title {
         @include fontProperties("light", 28px, $font-secondary);
         padding-left: 2px;
+
       }
       label {
         position: absolute;
@@ -60,32 +61,86 @@
         flex-direction: column;
         gap: 12px;
 
+        input[type="checkbox"]:checked + .dish {
+          padding-right: 74px;
+          .dish__check {
+            display: block;
+          }
+        }
+
         .dish {
           background: white;
           box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
             rgba(0, 0, 0, 0.1);
           padding: 13px 15px 13px 15px;
           border-radius: 15px;
-
-          &__title {
-            @include fontProperties("medium", 18px);
-            margin-bottom: 5px;
-          }
+          justify-content: space-between;
+          position: relative;
 
           &__details {
             display: flex;
             justify-content: space-between;
-            @include fontProperties("light", 15px);
+
+            .details-text {
+              white-space: nowrap;
+              overflow: hidden;
+
+              &__title {
+                @include fontProperties("medium", 18px);
+                margin-bottom: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              &__description {
+                @include fontProperties("light", 15px);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
 
             .price {
-              font-weight: 700;
+              @include fontProperties("bold", 15px);
+
+              span {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                background: white;
+                width: 40px;
+                height: 100%;
+              }
+            }
+          }
+
+          &__check {
+            background: $light-green;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 59px;
+            border-radius: 0 15px 15px 0;
+            display: none;
+
+            .circle {
+              @include flexCenter;
+              position: absolute;
+              top: 24px;
+              right: 18px;
+              width: 20px;
+              height: 20px;
+              border-radius: 25px;
+              background: white;
+              color: $light-green;
             }
           }
         }
       }
     }
 
-    &__btn-container{
+    &__btn-container {
       @include flexCenter;
     }
   }
