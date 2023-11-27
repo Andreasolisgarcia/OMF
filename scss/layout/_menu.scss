@@ -1,0 +1,133 @@
+.menu {
+  margin-top: 220px;
+  top: 220px;
+  background: $light-grey;
+  border-radius: 32px 32px 0 0;
+  width: 100%;
+  padding: 32px 13px 40px 13px;
+  z-index: 1;
+
+  &__header {
+    position: relative;
+    .title {
+      @include fontProperties("light", 28px, $font-secondary);
+      padding-left: 2px;
+    }
+    label {
+      position: absolute;
+      right: 24px;
+      top: 8px;
+    }
+  }
+
+  &__courses {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40;
+
+    &__header {
+      height: 27px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      .title {
+        text-transform: uppercase;
+        @include fontProperties("light", 16px);
+      }
+      .divider {
+        width: 40px;
+        height: 3px;
+        background: $light-green;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      input[type="checkbox"]:checked + .dish {
+        padding-right: 74px;
+        .dish__check {
+          display: block;
+        }
+      }
+
+      .dish {
+        background: white;
+        box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
+          rgba(0, 0, 0, 0.1);
+        padding: 13px 15px 13px 15px;
+        border-radius: 15px;
+        justify-content: space-between;
+        position: relative;
+
+        &__details {
+          display: flex;
+          justify-content: space-between;
+
+          .details-text {
+            white-space: nowrap;
+            overflow: hidden;
+
+            &__title {
+              @include fontProperties("medium", 18px);
+              margin-bottom: 5px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &__description {
+              @include fontProperties("light", 15px);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .price {
+            @include fontProperties("bold", 15px);
+
+            span {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              background: white;
+              width: 40px;
+              height: 100%;
+            }
+          }
+        }
+
+        &__check {
+          background: $light-green;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 59px;
+          border-radius: 0 15px 15px 0;
+          display: none;
+
+          .circle {
+            @include flexCenter;
+            position: absolute;
+            top: 24px;
+            right: 18px;
+            width: 20px;
+            height: 20px;
+            border-radius: 25px;
+            background: white;
+            color: $light-green;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn-container {
+    @include flexCenter;
+  }
+}

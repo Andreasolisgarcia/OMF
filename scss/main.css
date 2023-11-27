@@ -257,17 +257,7 @@ footer .footer__links .bold-link {
   font-weight: 500;
 }
 
-.restaurant-menu {
-  position: relative;
-}
-.restaurant-menu__img img {
-  width: 100%;
-  height: 275px;
-  position: absolute;
-  top: -220px;
-  z-index: -1;
-}
-.restaurant-menu .menu {
+.menu {
   margin-top: 220px;
   top: 220px;
   background: #f6f6f6;
@@ -276,57 +266,57 @@ footer .footer__links .bold-link {
   padding: 32px 13px 40px 13px;
   z-index: 1;
 }
-.restaurant-menu .menu__header {
+.menu__header {
   position: relative;
 }
-.restaurant-menu .menu__header .title {
+.menu__header .title {
   font-weight: 300;
   font-size: 28px;
   font-family: "Shrikhand", cursive;
   padding-left: 2px;
 }
-.restaurant-menu .menu__header label {
+.menu__header label {
   position: absolute;
   right: 24px;
   top: 8px;
 }
-.restaurant-menu .menu__courses {
+.menu__courses {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 40;
 }
-.restaurant-menu .menu__courses__header {
+.menu__courses__header {
   height: 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 12px;
 }
-.restaurant-menu .menu__courses__header .title {
+.menu__courses__header .title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-.restaurant-menu .menu__courses__header .divider {
+.menu__courses__header .divider {
   width: 40px;
   height: 3px;
   background: #99e2d0;
 }
-.restaurant-menu .menu__courses__list {
+.menu__courses__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.restaurant-menu .menu__courses__list input[type=checkbox]:checked + .dish {
+.menu__courses__list input[type=checkbox]:checked + .dish {
   padding-right: 74px;
 }
-.restaurant-menu .menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
+.menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
   display: block;
 }
-.restaurant-menu .menu__courses__list .dish {
+.menu__courses__list .dish {
   background: white;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   padding: 13px 15px 13px 15px;
@@ -334,15 +324,15 @@ footer .footer__links .bold-link {
   justify-content: space-between;
   position: relative;
 }
-.restaurant-menu .menu__courses__list .dish__details {
+.menu__courses__list .dish__details {
   display: flex;
   justify-content: space-between;
 }
-.restaurant-menu .menu__courses__list .dish__details .details-text {
+.menu__courses__list .dish__details .details-text {
   white-space: nowrap;
   overflow: hidden;
 }
-.restaurant-menu .menu__courses__list .dish__details .details-text__title {
+.menu__courses__list .dish__details .details-text__title {
   font-weight: 500;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -351,7 +341,7 @@ footer .footer__links .bold-link {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.restaurant-menu .menu__courses__list .dish__details .details-text__description {
+.menu__courses__list .dish__details .details-text__description {
   font-weight: 300;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -359,12 +349,12 @@ footer .footer__links .bold-link {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.restaurant-menu .menu__courses__list .dish__details .price {
+.menu__courses__list .dish__details .price {
   font-weight: 700;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
-.restaurant-menu .menu__courses__list .dish__details .price span {
+.menu__courses__list .dish__details .price span {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -372,7 +362,7 @@ footer .footer__links .bold-link {
   width: 40px;
   height: 100%;
 }
-.restaurant-menu .menu__courses__list .dish__check {
+.menu__courses__list .dish__check {
   background: #99e2d0;
   position: absolute;
   right: 0;
@@ -382,7 +372,7 @@ footer .footer__links .bold-link {
   border-radius: 0 15px 15px 0;
   display: none;
 }
-.restaurant-menu .menu__courses__list .dish__check .circle {
+.menu__courses__list .dish__check .circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,7 +386,7 @@ footer .footer__links .bold-link {
   background: white;
   color: #99e2d0;
 }
-.restaurant-menu .menu__btn-container {
+.menu__btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,4 +432,15 @@ footer .footer__links .bold-link {
 
 .home__header__arrow i {
   display: none;
+}
+
+.restaurant-menu {
+  position: relative;
+}
+.restaurant-menu__img img {
+  width: 100%;
+  height: 275px;
+  position: absolute;
+  top: -220px;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
