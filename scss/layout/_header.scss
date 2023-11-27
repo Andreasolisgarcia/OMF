@@ -1,4 +1,6 @@
 header {
+  position: relative;
+  z-index: 10;
   .header-top-content {
     @include flexCenter;
 
@@ -45,6 +47,14 @@ header {
   }
 
   @include notMobile{
+    .header-background{
+      height: 96px;
+      width: 100%;
+      background: white;
+      position: absolute;
+      top:0;
+
+    }
     .header-top-content{
       height: 96px;
     }

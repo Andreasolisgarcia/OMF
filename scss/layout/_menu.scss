@@ -130,4 +130,12 @@
   &__btn-container {
     @include flexCenter;
   }
+
+  @include notMobile {
+    margin: 343px auto 0 auto;
+    top: 343px;   
+    max-width: 1055px;
+  }
 }
+
+
