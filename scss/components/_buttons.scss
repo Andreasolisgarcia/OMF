@@ -14,6 +14,10 @@
     $primary-color -11.44%,
     $btn-main-lightcolor 123.93%
   );
+
+  &:hover {
+    opacity: 0.8; 
+  }
 }
 
 .like-btn {

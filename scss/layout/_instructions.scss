@@ -74,6 +74,7 @@
 
   .instructions {
     @include notMobile {
+      padding-right: 15px;
     
       max-width: 1080px;
     

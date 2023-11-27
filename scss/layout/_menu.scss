@@ -9,6 +9,7 @@
 
   &__header {
     position: relative;
+    margin-bottom: 40px;
     .title {
       @include fontProperties("light", 28px, $font-secondary);
       padding-left: 2px;
@@ -21,21 +22,18 @@
   }
 
   &__courses {
-    margin-top: 40px;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40;
 
     &__header {
       height: 27px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       .title {
         text-transform: uppercase;
         @include fontProperties("light", 16px);
+        
       }
       .divider {
         width: 40px;

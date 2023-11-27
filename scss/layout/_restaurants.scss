@@ -61,6 +61,8 @@
   }
 
   @include notMobile{
+    padding: 30px 0 30px 0;
+
   &__cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
