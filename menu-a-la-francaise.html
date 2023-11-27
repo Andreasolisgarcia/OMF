@@ -16,9 +16,11 @@
   <body>
     <header>
       <div class="header-top-content">
-        <div class="header-top-content__return-arrow">
-          <i class="fa-solid fa-arrow-left"></i>
-        </div>
+        <a href="./index.html">
+          <div class="header-top-content__return-arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </a>
 
         <div class="header-top-content__logo">
           <img
@@ -60,31 +62,88 @@
             <div class="divider"></div>
           </div>
           <div class="menu__courses__list">
-            <div class="dish">
-              <div class="dish__title">Tartare de poulpe acidulé</div>
-              <div class="dish__details">
-                <div class="description">Aux zestes d'orange</div>
-                <div class="price">25€</div>
-              </div>
-            </div>
+            <label for="checkbox_tartare_poulpe">
+              <input
+                type="checkbox"
+                id="checkbox_tartare_poulpe"
+                name="checkbox_tartare_poulpe"
+              />
 
-            <div class="dish">
-              <div class="dish__title">Velouté de légumes d'antan</div>
-              <div class="dish__details">
-                <div class="description">Carotte, panais, topinambour</div>
-                <div class="price">35€</div>
-              </div>
-            </div>
-
-            <div class="dish">
-              <div class="dish__title">Soupe à l'oignon</div>
-              <div class="dish__details">
-                <div class="description">
-                  Revisitée
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">
+                      Tartare de poulpe acidulé
+                    </h2>
+                    <h3 class="details-text__description">
+                      Aux zestes d'orange
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>25€</span>
+                  </div>
                 </div>
-                <div class="price">20€</div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
               </div>
-            </div>
+            </label>
+
+            <label for="checkbox_veloute_legumes_dantan">
+              <input
+                type="checkbox"
+                id="checkbox_veloute_legumes_dantan"
+                name="checkbox_veloute_legumes_dantan"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">
+                      Velouté de légumes d'antan
+                    </h2>
+                    <h3 class="details-text__description">
+                      Carotte, panais, topinambour
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>35€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </label>
+
+            <label for="checkbox_soupe_oignon">
+              <input
+                type="checkbox"
+                id="checkbox_soupe_oignon"
+                name="checkbox_soupe_oignon"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">Soupe à l'oignon</h2>
+                    <h3 class="details-text__description">Revisitée</h3>
+                  </div>
+                  <div class="price">
+                    <span>20€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </label>
           </div>
         </section>
 
@@ -94,33 +153,88 @@
             <div class="divider"></div>
           </div>
           <div class="menu__courses__list">
-            <div class="dish">
-              <div class="dish__title">Coquilles Saint-Jacques</div>
-              <div class="dish__details">
-                <div class="description">
-                  Accompagnées d'une purée de panais
-                </div>
-                <div class="price">40€</div>
-              </div>
-            </div>
+            <label for="checkbox_coquilles_saint_jacques">
+              <input
+                type="checkbox"
+                id="checkbox_coquilles_saint_jacques"
+                name="checkbox_coquilles_saint_jacques"
+              />
 
-            <div class="dish">
-              <div class="dish__title">Magret de canard</div>
-              <div class="dish__details">
-                <div class="description">
-                  Et parmentier de pommes de terre
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">Coquilles Saint-Jacques</h2>
+                    <h3 class="details-text__description">
+                      Accompagnées d'une purée de panais
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>40€</span>
+                  </div>
                 </div>
-                <div class="price">35€</div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
               </div>
-            </div>
+            </label>
 
-            <div class="dish">
-              <div class="dish__title">Pigeonneau d’Ille-et-Vilaine</div>
-              <div class="dish__details">
-                <div class="description">Sur son lit de gnocchis aux légumes</div>
-                <div class="price">44€</div>
+            <label for="checkbox_magret_canard">
+              <input
+                type="checkbox"
+                id="checkbox_magret_canard"
+                name="checkbox_magret_canard"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">Magret de canard</h2>
+                    <h3 class="details-text__description">
+                      Et parmentier de pommes de terre
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>35€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
               </div>
-            </div>
+            </label>
+
+            <label for="checkbox_pigeonneau_ille_et_vilaine">
+              <input
+                type="checkbox"
+                id="checkbox_pigeonneau_ille_et_vilaine"
+                name="checkbox_pigeonneau_ille_et_vilaine"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">
+                      Pigeonneau d’Ille-et-Vilaine
+                    </h2>
+                    <h3 class="details-text__description">
+                      Sur son lit de gnocchis aux légumes
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>44€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </label>
           </div>
         </section>
 
@@ -130,31 +244,88 @@
             <div class="divider"></div>
           </div>
           <div class="menu__courses__list">
-            <div class="dish">
-              <div class="dish__title">Pétales de violettes glacés</div>
-              <div class="dish__details">
-                <div class="description">Et purée de noisettes</div>
-                <div class="price">18€</div>
-              </div>
-            </div>
+            <label for="checkbox_petale_violettes">
+              <input
+                type="checkbox"
+                id="checkbox_petale_violettes"
+                name="checkbox_petale_violettes"
+              />
 
-            <div class="dish">
-              <div class="dish__title">Fondant au chocolat</div>
-              <div class="dish__details">
-                <div class="description">
-                  Revisité
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">
+                      Pétales de violettes glacés
+                    </h2>
+                    <h3 class="details-text__description">
+                      Et purée de noisettes
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>18€</span>
+                  </div>
                 </div>
-                <div class="price">22€</div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
               </div>
-            </div>
+            </label>
 
-            <div class="dish">
-              <div class="dish__title">Millefeuille croustillant</div>
-              <div class="dish__details">
-                <div class="description">Myrtilles et pâte d’amande</div>
-                <div class="price">23€</div>
+            <label for="checkbox_fondant_chocolat">
+              <input
+                type="checkbox"
+                id="checkbox_fondant_chocolat"
+                name="checkbox_fondant_chocolat"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">Fondant au chocolat</h2>
+                    <h3 class="details-text__description">Revisité</h3>
+                  </div>
+                  <div class="price">
+                    <span>22€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
               </div>
-            </div>
+            </label>
+
+            <label for="checkbox_millefeuille_croustillant">
+              <input
+                type="checkbox"
+                id="checkbox_millefeuille_croustillant"
+                name="checkbox_millefeuille_croustillant"
+              />
+
+              <div class="dish">
+                <div class="dish__details">
+                  <div class="details-text">
+                    <h2 class="details-text__title">
+                      Millefeuille croustillant
+                    </h2>
+                    <h3 class="details-text__description">
+                      Myrtilles et pâte d’amande
+                    </h3>
+                  </div>
+                  <div class="price">
+                    <span>23€</span>
+                  </div>
+                </div>
+                <div class="dish__check">
+                  <span class="circle">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </label>
           </div>
         </section>
 
