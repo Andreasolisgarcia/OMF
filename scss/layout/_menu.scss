@@ -135,6 +135,17 @@
     margin: 343px auto 0 auto;
     top: 343px;   
     max-width: 1055px;
+    @include flexCenter;
+
+    &__header{
+      label {
+        right: -48px;
+      }
+    }
+
+    &__courses{
+      width: 634px;
+    }
   }
 }
 
