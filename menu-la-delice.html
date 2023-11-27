@@ -43,16 +43,50 @@
       <div class="menu">
         <div class="menu__header">
           <h1 class="title">Le délice des sens</h1>
-          <label for="checkbox-la-palette-du-gout">
+          <label class="like-btn" for="checkbox-le-delice-des-sens">
             <input
               type="checkbox"
-              id="checkbox-la-palette-du-gout"
-              name="checkbox-la-palette-du-gout"
+              id="checkbox-le-delice-des-sens"
+              name="checkbox-le-delice-des-sens"
             />
-            <img
-              src="./assets/heart-thin.svg"
-              alt="case à cocher j'aime sous forme de cœur"
-            />
+            <div class="icon">
+              <svg
+                class="unliked"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                title="heart"
+              >
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                />
+              </svg>
+
+              <svg
+                class="liked"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                title="heart"
+              >
+                <defs>
+                  <linearGradient
+                    id="heartGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" style="stop-color: #9356dc" />
+                    <stop offset="100%" style="stop-color: #ff79da" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  style="fill: url(#heartGradient)"
+                />
+              </svg>
+            </div>
           </label>
         </div>
 

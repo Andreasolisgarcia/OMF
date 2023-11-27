@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
 header .header-top-content {
   display: flex;
   align-items: center;
@@ -206,7 +210,7 @@ header .header__bottom-content__text {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
-.restaurants__cards .card__content img {
+.restaurants__cards .card__content svg {
   position: absolute;
   top: 23px;
   right: 25px;
@@ -414,6 +418,26 @@ footer .footer__links .bold-link {
   border-radius: 25px;
   border: none;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+
+.like-btn {
+  cursor: pointer;
+}
+.like-btn .icon .unliked {
+  display: block;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 20;
+  overflow: visible;
+}
+.like-btn .icon .liked {
+  display: none;
+}
+.like-btn input:checked + .icon .unliked {
+  display: none;
+}
+.like-btn input:checked + .icon .liked {
+  display: block;
 }
 
 .home__header__arrow i {

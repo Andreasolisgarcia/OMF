@@ -46,7 +46,9 @@
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </div>
 
-        <a href="#restaurants" class="btn-main btn-explore">Explorer nos restaurants</a>
+        <a href="#restaurants" class="btn-main btn-explore"
+          >Explorer nos restaurants</a
+        >
       </div>
     </section>
 
@@ -92,135 +94,269 @@
     <section id="restaurants" class="restaurants">
       <div class="restaurants__title">Restaurants</div>
       <div class="restaurants__cards">
-
         <a href="./menu-la-palette.html">
-        <div class="card">
-          <img
-            class="card__image"
-            src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="plat sur la table"
-          />
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="plat sur la table"
+            />
 
-          <div class="card__tag">
-            <span> Nouveau </span>
-          </div>
-
-          <div class="card__content">
-            <div class="card__content__text">
-              <div class="title">La palette du goût</div>
-              <div class="subtitle">Ménilmontant</div>
+            <div class="card__tag">
+              <span> Nouveau </span>
             </div>
-            <label for="checkbox-la-palette-du-gout">
-              <input
-                type="checkbox"
-                id="checkbox-la-palette-du-gout"
-                name="checkbox-la-palette-du-gout"
-              />
-              <img
-                src="./assets/heart-thin.svg"
-                alt="case à cocher j'aime sous forme de cœur"
-              />
-            </label>
-          </div>
-        </div>
-      </a>
 
-      <a href="./menu-la-note.html">
-        <div class="card">
-          <img
-            class="card__image"
-            src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt="plat sur la table"
-          />
+            <div class="card__content">
+              <div class="card__content__text">
+                <div class="title">La palette du goût</div>
+                <div class="subtitle">Ménilmontant</div>
+              </div>
+              <label class="like-btn" for="checkbox-la-palette-du-gout">
+                <input
+                  type="checkbox"
+                  id="checkbox-la-palette-du-gout"
+                  name="checkbox-la-palette-du-gout"
+                />
+                <div class="icon">
+                  <svg
+                    class="unliked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    />
+                  </svg>
 
-          <div class="card__tag">
-            <span> Nouveau </span>
-          </div>
-
-          <div class="card__content">
-            <div class="card__content__text">
-              <div class="title">La note enchantée</div>
-              <div class="subtitle">Charonne</div>
+                  <svg
+                    class="liked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="heartGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #9356dc" />
+                        <stop offset="100%" style="stop-color: #ff79da" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      style="fill: url(#heartGradient)"
+                    />
+                  </svg>
+                </div>
+              </label>
             </div>
-            <label for="checkbox-la-note-enchantee">
-              <input
-                type="checkbox"
-                id="checkbox-la-note-enchantee"
-                name="checkbox-la-note-enchantee"
-              />
-              <img
-                src="./assets/heart-thin.svg"
-                alt="case à cocher j'aime sous forme de cœur"
-              />
-            </label>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a href="./menu-a-la-francaise.html">
-        <div class="card">
-          <img
-            class="card__image"
-            src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt="plat sur la table"
-          />
+        <a href="./menu-la-note.html">
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="plat sur la table"
+            />
 
-          <div class="card__tag">
-            <span> Nouveau </span>
-          </div>
-
-          <div class="card__content">
-            <div class="card__content__text">
-              <div class="title">À la française</div>
-              <div class="subtitle">Cité Rouge</div>
+            <div class="card__tag">
+              <span> Nouveau </span>
             </div>
-            <label for="checkbox-a-la-francaise">
-              <input
-                type="checkbox"
-                id="checkbox-a-la-francaise"
-                name="checkbox-a-la-francaise"
-              />
-              <img
-                src="./assets/heart-thin.svg"
-                alt="case à cocher j'aime sous forme de cœur"
-              />
-            </label>
-          </div>
-        </div>
-      </a>
 
-      <a href="./menu-la-delice.html">
-        <div class="card">
-          <img
-            class="card__image"
-            src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="plat sur la table"
-          />
+            <div class="card__content">
+              <div class="card__content__text">
+                <div class="title">La note enchantée</div>
+                <div class="subtitle">Charonne</div>
+              </div>
+              <label class="like-btn" for="checkbox-la-note-enchantee">
+                <input
+                  type="checkbox"
+                  id="checkbox-la-note-enchantee"
+                  name="checkbox-la-note-enchantee"
+                />
+                <div class="icon">
+                  <svg
+                    class="unliked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    />
+                  </svg>
 
-          <div class="card__tag">
-            <span> Nouveau </span>
-          </div>
-
-          <div class="card__content">
-            <div class="card__content__text">
-              <div class="title">Le délice des sens</div>
-              <div class="subtitle">Folie-Méricourt</div>
+                  <svg
+                    class="liked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="heartGradient2"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #9356dc" />
+                        <stop offset="100%" style="stop-color: #ff79da" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      style="fill: url(#heartGradient2)"
+                    />
+                  </svg>
+                </div>
+              </label>
             </div>
-            <label for="checkbox-le-delice-des-sens">
-              <input
-                type="checkbox"
-                id="checkbox-le-delice-des-sens"
-                name="checkbox-le-delice-des-sens"
-              />
-              <img
-                src="./assets/heart-thin.svg"
-                alt="case à cocher j'aime sous forme de cœur"
-              />
-            </label>
           </div>
-        </div>
-      </a>
-          
+        </a>
+
+        <a href="./menu-a-la-francaise.html">
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="plat sur la table"
+            />
+
+            <div class="card__tag">
+              <span> Nouveau </span>
+            </div>
+
+            <div class="card__content">
+              <div class="card__content__text">
+                <div class="title">À la française</div>
+                <div class="subtitle">Cité Rouge</div>
+              </div>
+              <label class="like-btn" for="checkbox-a-la-francaise">
+                <input
+                  type="checkbox"
+                  id="checkbox-a-la-francaise"
+                  name="checkbox-a-la-francaise"
+                />
+                <div class="icon">
+                  <svg
+                    class="unliked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="liked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="heartGradient3"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #9356dc" />
+                        <stop offset="100%" style="stop-color: #ff79da" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      style="fill: url(#heartGradient3)"
+                    />
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </div>
+        </a>
+
+        <a href="./menu-la-delice.html">
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="plat sur la table"
+            />
+
+            <div class="card__tag">
+              <span> Nouveau </span>
+            </div>
+
+            <div class="card__content">
+              <div class="card__content__text">
+                <div class="title">Le délice des sens</div>
+                <div class="subtitle">Folie-Méricourt</div>
+              </div>
+              <label class="like-btn" for="checkbox-le-delice-des-sens">
+                <input
+                  type="checkbox"
+                  id="checkbox-le-delice-des-sens"
+                  name="checkbox-le-delice-des-sens"
+                />
+                <div class="icon">
+                  <svg
+                    class="unliked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="liked"
+                    viewBox="0 0 512 512"
+                    width="24"
+                    height="24"
+                    title="heart"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="heartGradient4"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #9356dc" />
+                        <stop offset="100%" style="stop-color: #ff79da" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      style="fill: url(#heartGradient4)"
+                    />
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
 
