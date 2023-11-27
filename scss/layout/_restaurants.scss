@@ -1,6 +1,5 @@
 .restaurants {
   padding: 54px 18px 66px 18px;
-  background: $light-grey;
   &__title {
     @include fontProperties("bold", 24px);
     padding-left: 2px;
@@ -59,5 +58,22 @@
         }
       }
     }
+  }
+
+  @include notMobile{
+  &__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+  }
+}
+
+.restaurants-wrapper{
+  @include notMobile {
+    max-width: 1080px; 
+    margin: 0 auto;
   }
 }

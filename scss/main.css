@@ -45,9 +45,9 @@ header .header-top-content__logo--size {
   width: 162px;
 }
 header .header__bottom-content {
-  background: #eaeaea;
   height: 50px;
   gap: 17px;
+  background: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +63,11 @@ header .header__bottom-content__text {
   font-weight: 500;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 500px) {
+  header .header-top-content {
+    height: 96px;
+  }
 }
 
 .hero {
@@ -95,6 +100,30 @@ header .header__bottom-content__text {
 }
 .hero .hero-content .btn-explore {
   width: 218px;
+  height: 50px;
+}
+@media (min-width: 500px) {
+  .hero {
+    height: 239px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-content {
+    gap: 27px;
+  }
+  .hero .hero-content__title {
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero-content__subtitle {
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+  }
 }
 
 .instructions {
@@ -117,13 +146,15 @@ header .header__bottom-content__text {
   position: relative;
 }
 .instructions__steps .step__number {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   width: 24px;
   height: 24px;
   border-radius: 25px;
   background: #9356dc;
   color: white;
-  font-size: 14px;
   padding-top: 5px;
   display: flex;
   justify-content: center;
@@ -132,7 +163,7 @@ header .header__bottom-content__text {
 }
 .instructions__steps .step__content {
   background: #f6f6f6;
-  width: 322px;
+  width: 100%;
   height: 72px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -150,10 +181,37 @@ header .header__bottom-content__text {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 500px) {
+  .instructions {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .instructions__title {
+    font-size: 24px;
+  }
+  .instructions__steps {
+    flex-direction: row;
+  }
+  .instructions__steps .step {
+    width: 33%;
+  }
+}
+
+.instructions-wrapper {
+  background: white;
+}
+@media (min-width: 500px) {
+  .instructions-wrapper .instructions {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
 
 .restaurants {
   padding: 54px 18px 66px 18px;
-  background: #f6f6f6;
 }
 .restaurants__title {
   font-weight: 700;
@@ -217,16 +275,35 @@ header .header__bottom-content__text {
   width: 22px;
   height: 21px;
 }
+@media (min-width: 500px) {
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .restaurants-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
 
 footer {
   background: #353535;
   padding: 25px;
   color: white;
 }
+footer .footer__logo {
+  margin-bottom: 16px;
+}
 footer .footer__logo img {
   height: 18px;
   filter: invert(100%);
-  margin-bottom: 16px;
 }
 footer .footer__links {
   font-weight: 400;
@@ -240,6 +317,7 @@ footer .footer__links {
 footer .footer__links .footer__link {
   display: flex;
   align-items: center;
+  width: 130px;
 }
 footer .footer__links .footer__link .icon-container {
   padding-right: 10px;
@@ -255,6 +333,23 @@ footer .footer__links .footer__link .fa-handshake-simple {
 }
 footer .footer__links .bold-link {
   font-weight: 500;
+  width: 170px;
+}
+@media (min-width: 500px) {
+  footer {
+    padding: 63px 25px 30px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+  footer .footer__logo {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  footer .footer__links {
+    font-size: 14px;
+    flex-direction: row;
+  }
 }
 
 .menu {
@@ -405,6 +500,7 @@ footer .footer__links .bold-link {
   text-align: center;
   width: 186px;
   height: 50px;
+  cursor: pointer;
   border-radius: 25px;
   border: none;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -432,6 +528,10 @@ footer .footer__links .bold-link {
 
 .home__header__arrow i {
   display: none;
+}
+
+.home__body {
+  background: #f6f6f6;
 }
 
 .restaurant-menu {

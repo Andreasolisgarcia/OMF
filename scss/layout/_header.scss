@@ -28,9 +28,9 @@ header {
   }
 
   .header__bottom-content {
-    background: $medium-grey;
     height: 50px;
     gap: 17px;
+    background: $medium-grey;
 
     @include flexCenter(row);
     &__icon i {
@@ -41,6 +41,12 @@ header {
     &__text {
       color: $dark-grey;
       @include fontProperties("medium", 16px);
+    }
+  }
+
+  @include notMobile{
+    .header-top-content{
+      height: 96px;
     }
   }
 }

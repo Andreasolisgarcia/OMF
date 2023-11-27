@@ -4,10 +4,10 @@ footer {
   color: white;
 
   .footer__logo {
+    margin-bottom: 16px;
     img {
       height: 18px;
       filter: invert(100%);
-      margin-bottom: 16px;
     }
   }
 
@@ -21,6 +21,7 @@ footer {
     .footer__link {
       display: flex;
       align-items: center;
+      width: 130px;
 
       .icon-container {
         padding-right: 10px;
@@ -39,6 +40,25 @@ footer {
     }
     .bold-link {
       font-weight: 500;
+      width: 170px;
+    }
+  }
+
+  @include notMobile{
+    padding: 63px 25px 30px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    .footer__logo {
+      margin: 0;
+      padding-bottom: 5px;
+
+    }
+
+    .footer__links{
+
+      font-size: 14px;
+      flex-direction: row;
     }
   }
 }

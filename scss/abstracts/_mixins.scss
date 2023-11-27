@@ -10,3 +10,9 @@
   font-size: $size;
   font-family: $font-family;
 }
+
+@mixin notMobile {
+  @media (min-width: $not-mobile) {
+    @content
+  }
+}
