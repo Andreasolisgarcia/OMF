@@ -18,6 +18,8 @@
       &__image {
         height: 231px;
         width: 100%;
+        object-fit: cover;
+        object-position: center;
         border-radius: 15px 15px 0 0;
       }
 
@@ -60,22 +62,22 @@
     }
   }
 
-  @include notMobile{
+  @include notMobile {
     padding: 30px 0 30px 0;
 
-  &__cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 50px;
-  }
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 100px;
+      row-gap: 50px;
+    }
   }
 }
 
-.restaurants-wrapper{
+.restaurants-wrapper {
   @include notMobile {
-    max-width: 1080px; 
+    max-width: 1080px;
     margin: 0 auto;
   }
 }
