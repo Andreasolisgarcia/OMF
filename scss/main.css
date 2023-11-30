@@ -15,6 +15,16 @@ input[type=checkbox] {
   display: none;
 }
 
+.menu__courses__list input[type=checkbox]:checked + .dish {
+  padding-right: 74px;
+}
+.menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
+  display: block;
+}
+.menu__courses__list .dish__check {
+  display: none;
+}
+
 header {
   position: relative;
   z-index: 10;
@@ -289,7 +299,7 @@ header .header__bottom-content__text {
   top: 23px;
   right: 25px;
   width: 22px;
-  height: 21px;
+  height: 22px;
 }
 @media (min-width: 500px) {
   .restaurants {
@@ -390,9 +400,9 @@ footer .footer__links .bold-link {
   font-family: "Shrikhand", cursive;
   padding-left: 2px;
 }
-.menu__header label {
+.menu__header label .icon svg {
   position: absolute;
-  right: 24px;
+  right: 0;
   top: 8px;
 }
 .menu__courses {
@@ -420,12 +430,6 @@ footer .footer__links .bold-link {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-.menu__courses__list input[type=checkbox]:checked + .dish {
-  padding-right: 74px;
-}
-.menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
-  display: block;
 }
 .menu__courses__list .dish {
   background: white;
@@ -513,8 +517,11 @@ footer .footer__links .bold-link {
     justify-content: center;
     flex-direction: column;
   }
-  .menu__header label {
-    right: -48px;
+  .menu__header .title {
+    margin-right: 24px;
+  }
+  .menu label .icon svg {
+    right: -24px;
   }
   .menu__courses {
     width: 634px;
@@ -545,21 +552,31 @@ footer .footer__links .bold-link {
 .like-btn {
   cursor: pointer;
 }
+.like-btn .icon {
+  overflow: visible;
+}
 .like-btn .icon .unliked {
-  display: block;
+  width: 22px;
+  height: 22px;
   fill: transparent;
   stroke: black;
-  stroke-width: 20;
+  stroke-width: 18;
   overflow: visible;
 }
 .like-btn .icon .liked {
-  display: none;
-}
-.like-btn input:checked + .icon .unliked {
-  display: none;
+  width: 22px;
+  height: 22px;
+  overflow: visible;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  transform-origin: center bottom;
+  transition: -webkit-clip-path 500ms ease-in;
+  transition: clip-path 500ms ease-in;
+  transition: clip-path 500ms ease-in, -webkit-clip-path 500ms ease-in;
 }
 .like-btn input:checked + .icon .liked {
-  display: block;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .home__header__arrow i {

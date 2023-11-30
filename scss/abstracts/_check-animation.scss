@@ -1,0 +1,22 @@
+.menu {
+    &__courses {
+      &__list {
+        input[type="checkbox"]:checked + .dish {
+          padding-right: 74px;
+          .dish__check {
+            display: block;
+          }
+        }
+  
+        .dish {
+          &__check {
+            display: none;
+          }
+        }
+      }
+    }
+    
+  }
+  
+  
+  

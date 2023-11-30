@@ -20,31 +20,6 @@
   }
 }
 
-.like-btn {
-  cursor: pointer;
-  .icon {
-    .unliked {
-      display: block;
-      fill: transparent;
-      stroke: black;
-      stroke-width: 20;
 
-      overflow: visible;
-    }
 
-    .liked {
-      display: none; 
-    }
-  }
-
-  input:checked + .icon {
-    .unliked {
-      display: none; 
-    }
-
-    .liked {
-      display: block; 
-    }
-  }
-}
 

@@ -5,6 +5,7 @@
 
 @import './abstracts/variables';
 @import './abstracts/mixins';
+@import './abstracts/check-animation';
 
 @import './layout/header';
 @import './layout/hero';
@@ -13,7 +14,8 @@
 @import './layout/footer';
 @import './layout/menu';
 
-@import './components/buttons';
+@import './components/btn-main';
+@import './components/heart';
 
 @import './pages/home';
 @import './pages/restaurant';
