@@ -1,22 +1,30 @@
 .menu {
-    &__courses {
-      &__list {
-        input[type="checkbox"]:checked + .dish {
-          padding-right: 74px;
-          .dish__check {
-            display: block;
+  &__courses {
+    &__list {
+      .dish {
+        padding-right: 0;
+        transition: padding-right 300ms;
+
+        &__check {
+          clip-path: inset(0 0 0 100%  round 0 15px 15px 0);
+          transition: clip-path 300ms ;
+          .circle {
+            transform: translateX(300%);
+            transition: transform 300ms;
           }
         }
-  
-        .dish {
-          &__check {
-            display: none;
+      }
+
+      input[type="checkbox"]:checked + .dish {
+        padding-right: 74px;
+        .dish__check {
+          clip-path: inset(0 0 0 0 round 0 15px 15px 0);
+          
+          .circle{
+            transform: translateX(0%);
           }
         }
       }
     }
-    
   }
-  
-  
-  
+}

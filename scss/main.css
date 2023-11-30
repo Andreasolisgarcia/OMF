@@ -15,14 +15,30 @@ input[type=checkbox] {
   display: none;
 }
 
+.menu__courses__list .dish {
+  padding-right: 0;
+  transition: padding-right 300ms;
+}
+.menu__courses__list .dish__check {
+  -webkit-clip-path: inset(0 0 0 100% round 0 15px 15px 0);
+          clip-path: inset(0 0 0 100% round 0 15px 15px 0);
+  transition: -webkit-clip-path 300ms;
+  transition: clip-path 300ms;
+  transition: clip-path 300ms, -webkit-clip-path 300ms;
+}
+.menu__courses__list .dish__check .circle {
+  transform: translateX(300%);
+  transition: transform 300ms;
+}
 .menu__courses__list input[type=checkbox]:checked + .dish {
   padding-right: 74px;
 }
 .menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
-  display: block;
+  -webkit-clip-path: inset(0 0 0 0 round 0 15px 15px 0);
+          clip-path: inset(0 0 0 0 round 0 15px 15px 0);
 }
-.menu__courses__list .dish__check {
-  display: none;
+.menu__courses__list input[type=checkbox]:checked + .dish .dish__check .circle {
+  transform: translateX(0%);
 }
 
 header {
@@ -485,7 +501,7 @@ footer .footer__links .bold-link {
   height: 100%;
   width: 59px;
   border-radius: 0 15px 15px 0;
-  display: none;
+  padding-left: 15px;
 }
 .menu__courses__list .dish__check .circle {
   display: flex;

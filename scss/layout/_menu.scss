@@ -103,7 +103,7 @@
           height: 100%;
           width: 59px;
           border-radius: 0 15px 15px 0;
-          display: none;
+          padding-left: 15px;
 
           .circle {
             @include flexCenter;
@@ -140,7 +140,7 @@
     label {
       .icon {
         svg {
-          right: -24px;       
+          right: -24px;
         }
       }
     }
@@ -150,4 +150,3 @@
     }
   }
 }
-
