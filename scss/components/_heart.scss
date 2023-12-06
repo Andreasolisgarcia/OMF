@@ -13,12 +13,12 @@
       }
   
       .liked {
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
         overflow: visible;
         clip-path: inset(100% 0 0 0 );
         transform-origin: center bottom;
-        transition: clip-path 500ms ease-in; 
+        transition: clip-path 250ms ease-in; 
       }
     }
   

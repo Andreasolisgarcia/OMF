@@ -310,12 +310,15 @@ header .header__bottom-content__text {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
-.restaurants__cards .card__content svg {
+.restaurants__cards .card__content svg:first-child {
   position: absolute;
   top: 23px;
   right: 25px;
-  width: 22px;
-  height: 22px;
+}
+.restaurants__cards .card__content svg:last-child {
+  position: absolute;
+  top: 22px;
+  right: 24px;
 }
 @media (min-width: 500px) {
   .restaurants {
@@ -416,10 +419,15 @@ footer .footer__links .bold-link {
   font-family: "Shrikhand", cursive;
   padding-left: 2px;
 }
-.menu__header label .icon svg {
+.menu__header label .icon svg:first-child {
   position: absolute;
   right: 0;
   top: 8px;
+}
+.menu__header label .icon svg:last-child {
+  position: absolute;
+  right: -1px;
+  top: 7px;
 }
 .menu__courses {
   margin-bottom: 40px;
@@ -580,15 +588,15 @@ footer .footer__links .bold-link {
   overflow: visible;
 }
 .like-btn .icon .liked {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   overflow: visible;
   -webkit-clip-path: inset(100% 0 0 0);
           clip-path: inset(100% 0 0 0);
   transform-origin: center bottom;
-  transition: -webkit-clip-path 500ms ease-in;
-  transition: clip-path 500ms ease-in;
-  transition: clip-path 500ms ease-in, -webkit-clip-path 500ms ease-in;
+  transition: -webkit-clip-path 250ms ease-in;
+  transition: clip-path 250ms ease-in;
+  transition: clip-path 250ms ease-in, -webkit-clip-path 250ms ease-in;
 }
 .like-btn input:checked + .icon .liked {
   -webkit-clip-path: inset(0 0 0 0);

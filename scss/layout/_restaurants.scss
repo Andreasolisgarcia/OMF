@@ -51,12 +51,15 @@
           }
         }
 
-        svg {
+        svg:first-child {
           position: absolute;
           top: 23px;
           right: 25px;
-          width: 22px;
-          height: 22px;
+        }
+        svg:last-child {
+          position: absolute;
+          top: 22px;
+          right: 24px;
         }
       }
     }

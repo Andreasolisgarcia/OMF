@@ -16,10 +16,16 @@
     }
     label {
       .icon {
-        svg {
+        svg:first-child{
           position: absolute;
           right: 0;
           top: 8px;
+        }
+
+        svg:last-child {
+          position: absolute;
+          right: -1px;
+          top: 7px;
         }
       }
     }
