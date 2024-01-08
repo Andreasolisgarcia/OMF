@@ -79,7 +79,7 @@
 }
 
 .restaurants-wrapper {
-  @include desktop {
+  @include tablet {
     max-width: 1080px;
     margin: 0 auto;
   }

@@ -132,8 +132,6 @@
   }
 
   @media (min-width: 668px) {
-    margin: 343px auto 0 auto;
-    top: 343px;
     max-width: 1055px;
     @include flexCenter;
 
@@ -154,5 +152,10 @@
     &__courses {
       width: 634px;
     }
+  }
+
+  @include desktop {
+    margin: 343px auto 0 auto;
+    top: 343px;
   }
 }

@@ -11,7 +11,7 @@ a {
   color: black;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   display: none;
 }
 
@@ -21,7 +21,7 @@ input[type="checkbox"] {
 }
 .menu__courses__list .dish__check {
   -webkit-clip-path: inset(0 0 0 100% round 0 15px 15px 0);
-  clip-path: inset(0 0 0 100% round 0 15px 15px 0);
+          clip-path: inset(0 0 0 100% round 0 15px 15px 0);
   transition: -webkit-clip-path 300ms;
   transition: clip-path 300ms;
   transition: clip-path 300ms, -webkit-clip-path 300ms;
@@ -30,18 +30,14 @@ input[type="checkbox"] {
   transform: translateX(300%);
   transition: transform 300ms;
 }
-.menu__courses__list input[type="checkbox"]:checked + .dish {
+.menu__courses__list input[type=checkbox]:checked + .dish {
   padding-right: 74px;
 }
-.menu__courses__list input[type="checkbox"]:checked + .dish .dish__check {
+.menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
   -webkit-clip-path: inset(0 0 0 0 round 0 15px 15px 0);
-  clip-path: inset(0 0 0 0 round 0 15px 15px 0);
+          clip-path: inset(0 0 0 0 round 0 15px 15px 0);
 }
-.menu__courses__list
-  input[type="checkbox"]:checked
-  + .dish
-  .dish__check
-  .circle {
+.menu__courses__list input[type=checkbox]:checked + .dish .dish__check .circle {
   transform: translateX(0%);
 }
 
@@ -275,9 +271,9 @@ header .header__bottom-content__text {
   height: 231px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__cards .card__tag {
@@ -332,12 +328,12 @@ header .header__bottom-content__text {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     -moz-column-gap: 100px;
-    column-gap: 100px;
+         column-gap: 100px;
     row-gap: 50px;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 634px) {
   .restaurants-wrapper {
     max-width: 1080px;
     margin: 0 auto;
@@ -536,8 +532,6 @@ footer .footer__links .bold-link {
 }
 @media (min-width: 668px) {
   .menu {
-    margin: 343px auto 0 auto;
-    top: 343px;
     max-width: 1055px;
     display: flex;
     align-items: center;
@@ -552,6 +546,12 @@ footer .footer__links .bold-link {
   }
   .menu__courses {
     width: 634px;
+  }
+}
+@media (min-width: 1100px) {
+  .menu {
+    margin: 343px auto 0 auto;
+    top: 343px;
   }
 }
 
@@ -598,7 +598,7 @@ footer .footer__links .bold-link {
   height: 24px;
   overflow: visible;
   -webkit-clip-path: inset(100% 0 0 0);
-  clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
   transform-origin: center bottom;
   transition: -webkit-clip-path 250ms ease-in;
   transition: clip-path 250ms ease-in;
@@ -606,7 +606,7 @@ footer .footer__links .bold-link {
 }
 .like-btn input:checked + .icon .liked {
   -webkit-clip-path: inset(0 0 0 0);
-  clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .home__header__arrow i {
@@ -624,9 +624,9 @@ footer .footer__links .bold-link {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   position: absolute;
   top: -220px;
   z-index: -7;
@@ -640,4 +640,4 @@ footer .footer__links .bold-link {
     height: 375px;
     top: -343px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
