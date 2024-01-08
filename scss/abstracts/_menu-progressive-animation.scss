@@ -1,0 +1,84 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@function calculate-animation-delay($index, $delay: 0.2s) {
+  @return $index * $delay;
+}
+
+$menu-sections: 4;
+$dishes-per-section: 4;
+
+@for $i from 1 through $menu-sections {
+  // loop beetween sections
+
+  @for $j from 1 through $dishes-per-section {
+    // loop beetween each dish of each section
+    .menu__courses:nth-child(#{$i}) label:nth-child(#{$j}) {
+      opacity: 0;
+      animation: fadeInUp 0.8s forwards;
+      animation-delay: calculate-animation-delay(
+        ($i - 1) * $dishes-per-section + $j
+      );
+    }
+  }
+
+  .menu__courses:nth-child(#{$i}) .menu__courses__header {
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: calculate-animation-delay(($i - 1) * $dishes-per-section);
+  }
+}
+
+.menu__header {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+.menu__btn {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: calculate-animation-delay(
+    $menu-sections * $dishes-per-section
+  );
+}
+
+// @keyframes fadeInUp {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @function calculate-animation-delay($index, $delay: 0.2s) {
+//   @return $index * $delay;
+// }
+
+// @for $i from 1 through 4 {
+//   .menu__courses:nth-child(#{$i}){
+//     animation-delay: calculate-animation-delay($i);
+//   }
+// }
+
+// .menu__header,
+// .menu__courses,
+// .menu__btn {
+//   opacity: 0;
+//   animation: fadeInUp 0.8s forwards;
+// }
+
+// .menu__btn {
+//   animation-delay: 1.05s;
+// }
