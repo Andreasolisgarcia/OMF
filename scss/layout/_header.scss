@@ -46,16 +46,15 @@ header {
     }
   }
 
-  @include notMobile{
-    .header-background{
+  @include desktop {
+    .header-background {
       height: 96px;
       width: 100%;
       background: white;
       position: absolute;
-      top:0;
-
+      top: 0;
     }
-    .header-top-content{
+    .header-top-content {
       height: 96px;
     }
   }

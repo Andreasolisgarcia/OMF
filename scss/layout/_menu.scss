@@ -16,7 +16,7 @@
     }
     label {
       .icon {
-        svg:first-child{
+        svg:first-child {
           position: absolute;
           right: 0;
           top: 8px;
@@ -131,7 +131,7 @@
     @include flexCenter;
   }
 
-  @include notMobile {
+  @media (min-width: 668px) {
     margin: 343px auto 0 auto;
     top: 343px;
     max-width: 1055px;
@@ -139,7 +139,7 @@
 
     &__header {
       .title {
-        margin-right: 24px;
+        margin-right: 48px;
       }
     }
 

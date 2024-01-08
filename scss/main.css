@@ -11,7 +11,7 @@ a {
   color: black;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -21,7 +21,7 @@ input[type=checkbox] {
 }
 .menu__courses__list .dish__check {
   -webkit-clip-path: inset(0 0 0 100% round 0 15px 15px 0);
-          clip-path: inset(0 0 0 100% round 0 15px 15px 0);
+  clip-path: inset(0 0 0 100% round 0 15px 15px 0);
   transition: -webkit-clip-path 300ms;
   transition: clip-path 300ms;
   transition: clip-path 300ms, -webkit-clip-path 300ms;
@@ -30,14 +30,18 @@ input[type=checkbox] {
   transform: translateX(300%);
   transition: transform 300ms;
 }
-.menu__courses__list input[type=checkbox]:checked + .dish {
+.menu__courses__list input[type="checkbox"]:checked + .dish {
   padding-right: 74px;
 }
-.menu__courses__list input[type=checkbox]:checked + .dish .dish__check {
+.menu__courses__list input[type="checkbox"]:checked + .dish .dish__check {
   -webkit-clip-path: inset(0 0 0 0 round 0 15px 15px 0);
-          clip-path: inset(0 0 0 0 round 0 15px 15px 0);
+  clip-path: inset(0 0 0 0 round 0 15px 15px 0);
 }
-.menu__courses__list input[type=checkbox]:checked + .dish .dish__check .circle {
+.menu__courses__list
+  input[type="checkbox"]:checked
+  + .dish
+  .dish__check
+  .circle {
   transform: translateX(0%);
 }
 
@@ -94,7 +98,7 @@ header .header__bottom-content__text {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   header .header-background {
     height: 96px;
     width: 100%;
@@ -139,7 +143,7 @@ header .header__bottom-content__text {
   width: 218px;
   height: 50px;
 }
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .hero {
     height: 239px;
     padding-top: 30px;
@@ -207,6 +211,7 @@ header .header__bottom-content__text {
   display: flex;
   align-items: center;
   padding-left: 33px;
+  padding-right: 7px;
   gap: 27px;
 }
 .instructions__steps .step__content .step__icon {
@@ -218,7 +223,7 @@ header .header__bottom-content__text {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 500px) {
+@media (min-width: 634px) {
   .instructions {
     width: 100%;
     height: 100%;
@@ -238,16 +243,14 @@ header .header__bottom-content__text {
 .instructions-wrapper {
   background: white;
 }
-@media (min-width: 500px) {
-  .instructions-wrapper .instructions {
-    padding-right: 15px;
+
+@media (min-width: 634px) {
+  .instructions {
     max-width: 1080px;
     margin: 0 auto;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 20px 50px 20px;
   }
 }
-
 .restaurants {
   padding: 54px 18px 66px 18px;
 }
@@ -272,9 +275,9 @@ header .header__bottom-content__text {
   height: 231px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__cards .card__tag {
@@ -320,7 +323,7 @@ header .header__bottom-content__text {
   top: 22px;
   right: 24px;
 }
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .restaurants {
     padding: 30px 0 30px 0;
   }
@@ -329,12 +332,12 @@ header .header__bottom-content__text {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     -moz-column-gap: 100px;
-         column-gap: 100px;
+    column-gap: 100px;
     row-gap: 50px;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .restaurants-wrapper {
     max-width: 1080px;
     margin: 0 auto;
@@ -381,22 +384,22 @@ footer .footer__links .footer__link .fa-handshake-simple {
 }
 footer .footer__links .bold-link {
   font-weight: 500;
-  width: 170px;
+  width: 190px;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   footer {
-    padding: 63px 25px 30px 25px;
     display: flex;
     flex-direction: row-reverse;
+    padding: 63px 25px 30px 25px;
     gap: 16px;
-  }
-  footer .footer__logo {
-    margin: 0;
-    padding-bottom: 5px;
   }
   footer .footer__links {
     font-size: 14px;
     flex-direction: row;
+  }
+  footer .footer__logo {
+    margin: 0;
+    padding-bottom: 5px;
   }
 }
 
@@ -531,7 +534,7 @@ footer .footer__links .bold-link {
   justify-content: center;
   flex-direction: column;
 }
-@media (min-width: 500px) {
+@media (min-width: 668px) {
   .menu {
     margin: 343px auto 0 auto;
     top: 343px;
@@ -542,7 +545,7 @@ footer .footer__links .bold-link {
     flex-direction: column;
   }
   .menu__header .title {
-    margin-right: 24px;
+    margin-right: 48px;
   }
   .menu label .icon svg {
     right: -24px;
@@ -568,9 +571,12 @@ footer .footer__links .bold-link {
   border-radius: 25px;
   border: none;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 0.2s;
 }
 .btn-main:hover {
   opacity: 0.8;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.45);
 }
 
 .like-btn {
@@ -592,7 +598,7 @@ footer .footer__links .bold-link {
   height: 24px;
   overflow: visible;
   -webkit-clip-path: inset(100% 0 0 0);
-          clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% 0 0 0);
   transform-origin: center bottom;
   transition: -webkit-clip-path 250ms ease-in;
   transition: clip-path 250ms ease-in;
@@ -600,7 +606,7 @@ footer .footer__links .bold-link {
 }
 .like-btn input:checked + .icon .liked {
   -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
 }
 
 .home__header__arrow i {
@@ -618,14 +624,14 @@ footer .footer__links .bold-link {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   position: absolute;
   top: -220px;
   z-index: -7;
 }
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .restaurant-menu__img {
     width: 100%;
   }
@@ -634,4 +640,4 @@ footer .footer__links .bold-link {
     height: 375px;
     top: -343px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

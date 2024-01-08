@@ -40,25 +40,23 @@ footer {
     }
     .bold-link {
       font-weight: 500;
-      width: 170px;
+      width: 190px;
     }
   }
 
-  @include notMobile{
-    padding: 63px 25px 30px 25px;
+  @media (min-width: $footer-responsive) {
     display: flex;
     flex-direction: row-reverse;
+    padding: 63px 25px 30px 25px;
     gap: 16px;
+    .footer__links {
+      font-size: 14px;
+      flex-direction: row;
+    }
+
     .footer__logo {
       margin: 0;
       padding-bottom: 5px;
-
-    }
-
-    .footer__links{
-
-      font-size: 14px;
-      flex-direction: row;
     }
   }
 }
