@@ -22,6 +22,7 @@ footer {
       display: flex;
       align-items: center;
       width: 130px;
+      cursor: pointer;
 
       .icon-container {
         padding-right: 10px;
@@ -44,7 +45,7 @@ footer {
     }
   }
 
-  @media (min-width: $footer-responsive) {
+  @media (min-width: $medium-size) {
     display: flex;
     flex-direction: row-reverse;
     padding: 63px 25px 30px 25px;
