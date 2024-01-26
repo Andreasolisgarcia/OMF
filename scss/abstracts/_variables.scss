@@ -30,7 +30,12 @@ $steack: black;
 $top-bread: black;
 $tomato1: black;
 $tomato2: black;
-$location-pin-color: black;
+$location-pin-color: linear-gradient(
+  193.33deg,
+  $primary-color -11.44%,
+  $btn-main-lightcolor 123.93%
+);
+
 $location-pin-height: -90px;
 $bkg-color: white;
 $location-pin-size: 27px;

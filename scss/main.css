@@ -303,7 +303,7 @@ body > *:not(:first-child):not(:nth-child(2)) {
   width: 27px;
   height: 27px;
   border-radius: 60% 40% 0% 100%/60% 100% 0% 40%;
-  background: black;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   position: absolute;
   animation: fall-location 4s ease-in-out forwards infinite;
   transform: translateY(-100vh) translateX(-50%) rotate(45deg);
@@ -314,7 +314,7 @@ body > *:not(:first-child):not(:nth-child(2)) {
   position: absolute;
   width: 27px;
   height: 27px;
-  background: black;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border-radius: 30px;
   top: -3px;
   left: -3px;
