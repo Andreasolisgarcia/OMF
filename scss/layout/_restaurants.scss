@@ -39,7 +39,6 @@
       &__content {
         padding: 12px 12px 14px 12px;
         border-radius: 0 0 15px 15px;
-        position: relative;
 
         &__text {
           .title {
@@ -51,16 +50,17 @@
           }
         }
 
-        svg:first-child {
-          position: absolute;
-          top: 23px;
-          right: 25px;
-        }
-        svg:last-child {
-          position: absolute;
-          top: 22px;
-          right: 24px;
-        }
+      }
+
+      svg:first-child {
+        position: absolute;
+        bottom: 23px;
+        right: 25px;
+      }
+      svg:last-child {
+        position: absolute;
+        bottom: 22px;
+        right: 24px;
       }
     }
   }

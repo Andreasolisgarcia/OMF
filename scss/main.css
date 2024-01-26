@@ -648,7 +648,6 @@ header .header__bottom-content__text {
 .restaurants__cards .card__content {
   padding: 12px 12px 14px 12px;
   border-radius: 0 0 15px 15px;
-  position: relative;
 }
 .restaurants__cards .card__content__text .title {
   font-weight: 700;
@@ -661,14 +660,14 @@ header .header__bottom-content__text {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
-.restaurants__cards .card__content svg:first-child {
+.restaurants__cards .card svg:first-child {
   position: absolute;
-  top: 23px;
+  bottom: 23px;
   right: 25px;
 }
-.restaurants__cards .card__content svg:last-child {
+.restaurants__cards .card svg:last-child {
   position: absolute;
-  top: 22px;
+  bottom: 22px;
   right: 24px;
 }
 @media (min-width: 820px) {
