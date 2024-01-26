@@ -462,6 +462,7 @@ header .header__bottom-content__text {
 .hero {
   height: 287px;
   padding-top: 39px;
+  padding-bottom: 57px;
   background: #f6f6f6;
 }
 .hero .hero-content {
