@@ -1,0 +1,119 @@
+.loader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: $bkg-color;
+  z-index: $z-index-loader-background;
+  opacity: 1;
+  visibility: visible;
+  animation: loader-background forwards;
+  animation-delay: 6.8s;
+
+  .loader {
+    position: relative;
+
+    .location-pin {
+      left: 50%;
+      top: $location-pin-height;
+      width: $location-pin-size;
+      height: $location-pin-size;
+      border-radius: 60% 40% 0% 100% / 60% 100% 0% 40%;
+      background: $location-pin-color;
+      position: absolute;
+      animation: fall-location 4s ease-in-out forwards infinite;
+      transform: translateY(-100vh) translateX(-50%) rotate(45deg);
+      animation-delay: 1.2s;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: $location-pin-size;
+        height: $location-pin-size;
+        background: $location-pin-color;
+        border-radius: 30px;
+        top: -3px;
+        left: -3px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 9px;
+        width: 55%;
+        height: 55%;
+        background: white;
+        border-radius: 50px;
+      }
+    }
+
+    .top-bread {
+      position: absolute;
+      width: 100%;
+      height: 120%;
+      top: -315%;
+      background: $top-bread;
+      border-radius: 60% 60% 5% 5% / 100% 100% 25% 25%;
+      animation: fall 4s ease-in-out forwards infinite;
+      transform: translateY(-100vh);
+      animation-delay: 1s;
+      z-index: $z-index-bottom-bread;
+    }
+
+    .tomato-1 {
+      width: 70%;
+      height: 100%;
+      background: $tomato1;
+      position: absolute;
+      top: -190%;
+      left: -2%;
+      border-radius: 50px;
+      border: 4px solid $bkg-color;
+      transform: translateY(-100vh) rotate(-5deg);
+      z-index: $z-index-tomato-1;
+      animation: fall-tomato-1 4s ease-in-out forwards infinite;
+      animation-delay: 0.8s;
+    }
+
+    .tomato-2 {
+      width: 70%;
+      height: 100%;
+      background: $tomato2;
+      position: absolute;
+      top: -195%;
+      right: -5%;
+      border-radius: 50px;
+      border: 4px solid $bkg-color;
+      transform: translateY(-100vh) rotate(5deg);
+      z-index: $z-index-tomato-2;
+      animation: fall-tomato-2 4s ease-in-out forwards infinite;
+      animation-delay: 0.6s;
+    }
+
+    .steak {
+      content: "";
+      width: 100%;
+      height: 75%;
+      background: $steack;
+      position: absolute;
+      top: -101%;
+      border-radius: 50px;
+      z-index: $z-index-steak;
+      transform: translateY(-100vh);
+      animation: fall 4s ease-in-out forwards infinite;
+      animation-delay: 0.4s;
+    }
+
+    .bottom-bread {
+      width: $bottom-bread-width;
+      height: $bottom-bread-height;
+      background-color: $under-bread;
+      border-radius: 10% 10% 33% 33% / 10% 10% 100% 100%;
+      animation: fall 4s ease-in-out forwards infinite;
+      transform: translateY(-100vh);
+      animation-delay: 0.2s;
+      z-index: $z-index-bottom-bread;
+    }
+  }
+}

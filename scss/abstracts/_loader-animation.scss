@@ -1,0 +1,58 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-100vh);
+    }
+    40% {
+      transform: translateY(0);
+    }
+    65% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  @keyframes fall-location {
+    0% {
+      transform: translateY(-100vh) translateX(-50%) rotate(45deg);
+    }
+    40% {
+      transform: translateY(0) translateX(-50%) rotate(45deg);
+    }
+    65% {
+      transform: translateY(0) translateX(-50%) rotate(45deg);
+    }
+    100% {
+      transform: translateY(100vh) translateX(-50%) rotate(45deg);
+    }
+  }
+  @keyframes fall-tomato-1 {
+    0% {
+      transform: translateY(-100vh) rotate(-5deg);
+    }
+    40% {
+      transform: translateY(0vh) rotate(-5deg);
+    }
+    65% {
+      transform: translateY(0vh) rotate(-5deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(-5deg);
+    }
+  }
+  
+  @keyframes fall-tomato-2 {
+    0% {
+      transform: translateY(-100vh) rotate(5deg);
+    }
+    40% {
+      transform: translateY(0vh) rotate(5deg);
+    }
+    65% {
+      transform: translateY(0vh) rotate(5deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(5deg);
+    }
+  }
+  

@@ -15,6 +15,72 @@ input[type=checkbox] {
   display: none;
 }
 
+@keyframes loader-background {
+  0% {
+    min-height: 100vh;
+    visibility: visible;
+  }
+  100% {
+    min-height: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+@keyframes fall-location {
+  0% {
+    transform: translateY(-100vh) translateX(-50%) rotate(45deg);
+  }
+  40% {
+    transform: translateY(0) translateX(-50%) rotate(45deg);
+  }
+  65% {
+    transform: translateY(0) translateX(-50%) rotate(45deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-50%) rotate(45deg);
+  }
+}
+@keyframes fall-tomato-1 {
+  0% {
+    transform: translateY(-100vh) rotate(-5deg);
+  }
+  40% {
+    transform: translateY(0vh) rotate(-5deg);
+  }
+  65% {
+    transform: translateY(0vh) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(-5deg);
+  }
+}
+@keyframes fall-tomato-2 {
+  0% {
+    transform: translateY(-100vh) rotate(5deg);
+  }
+  40% {
+    transform: translateY(0vh) rotate(5deg);
+  }
+  65% {
+    transform: translateY(0vh) rotate(5deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(5deg);
+  }
+}
 .menu__courses__list .dish {
   padding-right: 0;
   transition: padding-right 300ms;
@@ -181,6 +247,117 @@ input[type=checkbox] {
   opacity: 0;
   animation: fadeInUp 0.8s forwards;
   animation-delay: 3.2s;
+}
+
+.loader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: white;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  animation: loader-background forwards;
+  animation-delay: 6.8s;
+}
+.loader-background .loader {
+  position: relative;
+}
+.loader-background .loader .location-pin {
+  left: 50%;
+  top: -90px;
+  width: 27px;
+  height: 27px;
+  border-radius: 60% 40% 0% 100%/60% 100% 0% 40%;
+  background: black;
+  position: absolute;
+  animation: fall-location 4s ease-in-out forwards infinite;
+  transform: translateY(-100vh) translateX(-50%) rotate(45deg);
+  animation-delay: 1.2s;
+}
+.loader-background .loader .location-pin:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: black;
+  border-radius: 30px;
+  top: -3px;
+  left: -3px;
+}
+.loader-background .loader .location-pin:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 9px;
+  width: 55%;
+  height: 55%;
+  background: white;
+  border-radius: 50px;
+}
+.loader-background .loader .top-bread {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: -315%;
+  background: black;
+  border-radius: 60% 60% 5% 5%/100% 100% 25% 25%;
+  animation: fall 4s ease-in-out forwards infinite;
+  transform: translateY(-100vh);
+  animation-delay: 1s;
+  z-index: 14;
+}
+.loader-background .loader .tomato-1 {
+  width: 70%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: -190%;
+  left: -2%;
+  border-radius: 50px;
+  border: 4px solid white;
+  transform: translateY(-100vh) rotate(-5deg);
+  z-index: 13;
+  animation: fall-tomato-1 4s ease-in-out forwards infinite;
+  animation-delay: 0.8s;
+}
+.loader-background .loader .tomato-2 {
+  width: 70%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: -195%;
+  right: -5%;
+  border-radius: 50px;
+  border: 4px solid white;
+  transform: translateY(-100vh) rotate(5deg);
+  z-index: 12;
+  animation: fall-tomato-2 4s ease-in-out forwards infinite;
+  animation-delay: 0.6s;
+}
+.loader-background .loader .steak {
+  content: "";
+  width: 100%;
+  height: 75%;
+  background: black;
+  position: absolute;
+  top: -101%;
+  border-radius: 50px;
+  z-index: 11;
+  transform: translateY(-100vh);
+  animation: fall 4s ease-in-out forwards infinite;
+  animation-delay: 0.4s;
+}
+.loader-background .loader .bottom-bread {
+  width: 60px;
+  height: 15px;
+  background-color: black;
+  border-radius: 10% 10% 33% 33%/10% 10% 100% 100%;
+  animation: fall 4s ease-in-out forwards infinite;
+  transform: translateY(-100vh);
+  animation-delay: 0.2s;
+  z-index: 14;
 }
 
 header {

@@ -5,9 +5,12 @@
 
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./abstracts/loader-background-animation";
+@import './abstracts/loader-animation';
 @import "./abstracts/check-animation";
 @import "./abstracts/menu-progressive-animation";
 
+@import "./layout/loader";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/instructions";
