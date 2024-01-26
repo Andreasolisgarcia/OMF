@@ -15,6 +15,20 @@ input[type=checkbox] {
   display: none;
 }
 
+@keyframes loader-body {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+body {
+  overflow: hidden;
+  animation: loader-body forwards;
+  animation-delay: 6.8s;
+}
+
 @keyframes loader-background {
   0% {
     min-height: 100vh;
@@ -25,6 +39,29 @@ input[type=checkbox] {
     visibility: hidden;
   }
 }
+.loader-background {
+  visibility: visible;
+  animation: loader-background forwards;
+  animation-delay: 6.8s;
+}
+
+@keyframes after-loader {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+body > *:not(:first-child):not(:nth-child(2)) {
+  opacity: 0;
+  height: 0;
+  animation: after-loader forwards;
+  animation-delay: 7.5s;
+}
+
 @keyframes fall {
   0% {
     transform: translateY(-100vh);
@@ -256,10 +293,6 @@ input[type=checkbox] {
   min-height: 100vh;
   background: white;
   z-index: 10;
-  opacity: 1;
-  visibility: visible;
-  animation: loader-background forwards;
-  animation-delay: 6.8s;
 }
 .loader-background .loader {
   position: relative;

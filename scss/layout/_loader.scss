@@ -5,10 +5,6 @@
   min-height: 100vh;
   background: $bkg-color;
   z-index: $z-index-loader-background;
-  opacity: 1;
-  visibility: visible;
-  animation: loader-background forwards;
-  animation-delay: 6.8s;
 
   .loader {
     position: relative;
