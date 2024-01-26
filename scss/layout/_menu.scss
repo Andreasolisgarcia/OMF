@@ -127,6 +127,10 @@
     }
   }
 
+  &__btn {
+    @include flexCenter;
+  }
+
 
   @media (min-width: 668px) {
     max-width: 1055px;

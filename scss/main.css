@@ -882,6 +882,12 @@ footer .footer__links .bold-link {
   background: white;
   color: #99e2d0;
 }
+.menu__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 @media (min-width: 668px) {
   .menu {
     max-width: 1055px;
