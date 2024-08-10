@@ -17,10 +17,10 @@ $menu-sections: 4;
 $dishes-per-section: 4;
 
 @for $i from 1 through $menu-sections {
-  // loop beetween sections
+  // loop entre sections
 
   @for $j from 1 through $dishes-per-section {
-    // loop beetween each dish of each section
+    //loop entre chaque element
     .menu__courses:nth-child(#{$i}) label:nth-child(#{$j}) {
       opacity: 0;
       animation: fadeInUp 0.8s forwards;
@@ -51,34 +51,3 @@ $dishes-per-section: 4;
   );
 }
 
-// @keyframes fadeInUp {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(20px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-
-// @function calculate-animation-delay($index, $delay: 0.2s) {
-//   @return $index * $delay;
-// }
-
-// @for $i from 1 through 4 {
-//   .menu__courses:nth-child(#{$i}){
-//     animation-delay: calculate-animation-delay($i);
-//   }
-// }
-
-// .menu__header,
-// .menu__courses,
-// .menu__btn {
-//   opacity: 0;
-//   animation: fadeInUp 0.8s forwards;
-// }
-
-// .menu__btn {
-//   animation-delay: 1.05s;
-// }
